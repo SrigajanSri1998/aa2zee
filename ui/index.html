@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aa2Zee 3PL Business Connect</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div>
+        <h1>Aa2Zee × 3PL Biz Connect</h1>
+        <p>3pl.aa2zee.com — East & West Coast fulfillment network onboarding</p>
+      </div>
+      <a class="primary-btn" href="#biz-form">Create Biz Account</a>
+    </header>
+
+    <section class="flash-section">
+      <h2>Flash Section</h2>
+      <p>
+        Good Morning, this is Krish from Aa2Zee.com. We specialize in Household Items — Kitchenware &
+        Tableware across B2B and B2C channels, and are expanding our 3PL fulfillment network.
+      </p>
+      <p>
+        Please review the overview, order profile, technical requirements, and submit your company pre-request
+        information for next-step demo and pricing discussion.
+      </p>
+    </section>
+
+    <main>
+      <section class="box">
+        <h2>Body Box-1: Aa2Zee Overview, Orders, Storage Volume & Requirements</h2>
+
+        <h3>Business Overview</h3>
+        <table>
+          <tbody>
+            <tr><th>Business Type</th><td>Household Items (Kitchenware & Tableware)</td></tr>
+            <tr><th>Model</th><td>Hybrid: B2B (Wholesale) & B2C (DTC/Ecommerce)</td></tr>
+            <tr><th>Storage Needs</th><td>10,000 Cubic Ft. (~125 pallets)</td></tr>
+            <tr><th>Inbound Flow</th><td>10–15 containers/month (5–10 SKUs per container)</td></tr>
+            <tr><th>Turnaround</th><td>High velocity: 15–45 days</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Weekly Order Volume & Fulfillment</h3>
+        <table>
+          <thead>
+            <tr><th>Channel</th><th>Weekly Volume</th><th>VAS Requirements</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>B2B (Bulk)</td><td>50–60 orders</td><td>5–10% need repack, labeling, shrink wrap, palletization</td></tr>
+            <tr><td>B2C (DTC)</td><td>200–250 orders</td><td>20% need custom boxing & gift wrap</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Technical & Service Requirements</h3>
+        <table>
+          <thead>
+            <tr><th>Requirement</th><th>Specific Capabilities Needed</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Logistics</td><td>Warehousing & fulfillment on East & West coasts</td></tr>
+            <tr><td>Software (WMS)</td><td>Customer portal, EDI (943, 940, 945), ACK/Ship confirm</td></tr>
+            <tr><td>Automation</td><td>Alerts for inbound/empty, tally/POR, BOL/POD, billing</td></tr>
+            <tr><td>Visibility</td><td>Real-time inventory dashboard + digital POD/POR access</td></tr>
+            <tr><td>Support</td><td>Proactive customer support and timely fulfillment alerts</td></tr>
+          </tbody>
+        </table>
+
+        <h3>Typical Product & Packaging Profile (Model SKU: ENMDO02QTRED)</h3>
+        <table>
+          <thead>
+            <tr><th>Level</th><th>Dimensions</th><th>Weight</th><th>Unit Count</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Individual SKU</td><td>10&quot; x 10&quot; x 7&quot;</td><td>6.75 lbs</td><td>1 unit (barcoded)</td></tr>
+            <tr><td>Master Carton</td><td>24&quot; x 18&quot; x 12&quot;</td><td>33.75 lbs</td><td>5 units (barcoded)</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="box">
+        <h2>Body Box-2: Aa2Zee Answers to 3PL Warehouse Concerns</h2>
+        <table>
+          <thead>
+            <tr><th>#</th><th>3PL Query</th><th>Aa2Zee Response</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>1</td><td>Exact Product Type</td><td>Household items: Kitchenware & Tableware</td></tr>
+            <tr><td>2</td><td>Labeling & Description</td><td>YES: SKU and barcode on outer carton</td></tr>
+            <tr><td>3</td><td>Barcoding</td><td>YES: SKU and barcode on outer carton</td></tr>
+            <tr><td>4</td><td>SKU Volume</td><td>100–125 total SKUs (~4–5 SKUs per container)</td></tr>
+            <tr><td>5</td><td>Documentation/Alerts</td><td>YES: packing slips + email notifications required</td></tr>
+            <tr><td>6</td><td>Shipping Methods</td><td>B2B customer-routed | B2C UPS/FedEx</td></tr>
+            <tr><td>7</td><td>Returns Handling</td><td>YES: approximately 10–15 B2C returns/week</td></tr>
+            <tr><td>8</td><td>System Integrations</td><td>B2C: Walmart, Amazon, proprietary website</td></tr>
+            <tr><td>9</td><td>Special Instructions</td><td>Mostly ready-to-ship; some require padded covers</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="box" id="biz-form">
+        <h2>Body Box-3: 3PL Business Info Entry Form</h2>
+        <p>Create, view, and edit a 3PL business account.</p>
+
+        <div class="tools-row">
+          <input id="loadId" type="number" min="1" placeholder="Enter Account ID to View/Edit" />
+          <button id="loadBtn" type="button">Load Account</button>
+        </div>
+
+        <form id="accountForm">
+          <div class="grid-2">
+            <label>3PL Company Name* <input name="company_name" required /></label>
+            <label>Company Number <input name="company_number" /></label>
+            <label>Company Address <input name="company_address" /></label>
+            <label>Company Site Link <input name="company_site_link" /></label>
+            <label>Key Contact Name <input name="key_contact_name" /></label>
+            <label>Key Contact Number <input name="key_contact_number" /></label>
+            <label>Key Contact Email <input name="key_contact_email" type="email" /></label>
+            <label>Warehouse Space <input name="warehouse_space" placeholder="e.g. 15,000 cu ft" /></label>
+            <label>Docking Spots Available <input name="docking_spots" /></label>
+            <label>FBM Separate Area?
+              <select name="fbm_separate_area"><option value="no">No</option><option value="yes">Yes</option></select>
+            </label>
+            <label>FBM Space <input name="fbm_space" /></label>
+            <label>PNP Automated?
+              <select name="pnp_automated"><option value="no">No</option><option value="yes">Yes</option></select>
+            </label>
+            <label>PNP System Name <input name="pnp_system_name" /></label>
+            <label>PNP Method <input name="pnp_method" /></label>
+            <label>VAS Time/Work Documentation Method <input name="vas_time_work_method" /></label>
+            <label>VAS Billing Method <input name="vas_billing_method" /></label>
+            <label>B2B Stores Handled?
+              <select name="b2b_stores_handled"><option value="no">No</option><option value="yes">Yes</option></select>
+            </label>
+            <label>B2B Routing Handled?
+              <select name="b2b_routing_handled"><option value="no">No</option><option value="yes">Yes</option></select>
+            </label>
+            <label>BOL Handled?
+              <select name="b2b_bol_handled"><option value="no">No</option><option value="yes">Yes</option></select>
+            </label>
+            <label>POD/POR Scan System Available?
+              <select name="pod_por_scan_available"><option value="no">No</option><option value="yes">Yes</option></select>
+            </label>
+            <label>24x7 Web Access for Order/Inventory/POD-POR?
+              <select name="web_access_24x7"><option value="no">No</option><option value="yes">Yes</option></select>
+            </label>
+          </div>
+
+          <h3>3PL Full Service Rate Entry List</h3>
+          <table id="ratesTable">
+            <thead>
+              <tr><th>Service</th><th>Rate</th><th>Billing Unit</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><input value="Receiving" /></td><td><input placeholder="$" /></td><td><input placeholder="per pallet/carton/hour" /></td></tr>
+              <tr><td><input value="Storage" /></td><td><input placeholder="$" /></td><td><input placeholder="per pallet/week" /></td></tr>
+              <tr><td><input value="Pick & Pack" /></td><td><input placeholder="$" /></td><td><input placeholder="per order" /></td></tr>
+              <tr><td><input value="B2B Prep / Palletization" /></td><td><input placeholder="$" /></td><td><input placeholder="per pallet" /></td></tr>
+            </tbody>
+          </table>
+
+          <label>Upload Rate List (optional) <input type="file" name="rate_list_file" /></label>
+
+          <div class="tools-row">
+            <button id="submitBtn" type="submit">Create Account</button>
+            <button id="updateBtn" type="button" class="secondary">Update Loaded Account</button>
+          </div>
+        </form>
+
+        <pre id="message"></pre>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p><strong>Aa2Zee.com</strong> | Krish | +1 201-777-3393 | krish@aa2zee.com</p>
+      <p>Follow us: LinkedIn · Facebook · Instagram · YouTube</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
